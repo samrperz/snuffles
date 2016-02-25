@@ -1,4 +1,3 @@
-
 function getMaleName() {
     var maleNamesString = "Ale Alfr_Alf Alfgeir Anders_Andrew Anlaufr Anundr_Anund Arnbjörn Arngrimr Arni_Arne Arnfast Asbjörn_Asbjörn Bagge Baldr_Balder Barid\ Bengt_Benedict Bersi Bertil Birger Björn_Beorn Bo Borkvard Botulfr Bragi_Brage Buðli Dag Dan Dyre Eilif Egill_Egil Emund Einarr_Einar Eirikr_Erik Eskild Falki Faste\ Filip_Philip \
     Fredrik_Frederick Frirek Froði_Frode Freyr_Frej Folki_Folke Gandalfr Geirr Georg_George Gnupa_Gnupa Gorm_Gorm Greger_Gregory Grimr_Grim Guðfrið_Godfrey\ Guðmundr_Gudmund Guðröðr_Gudröd Gunnarr_Gunnar Hakon_Hakon Halsten Haraldr_Harold Haukr Helgi_Helge\
@@ -210,7 +209,7 @@ Adda Adgar_Edgar Adran_Adrian Aeddan_Hugh Alan_Alan Aldwr_Aldroenus Algwyn_Alwin
     while (maleName.startsWith(" ") || maleName == "") {
         maleName = names[Math.floor(Math.random() * names.length)];
     }
-    document.getElementById("maleNameDisplay").innerHTML = maleName;
+    document.getElementById("maleNameDisplay").value = maleName;
 }
 function getFemaleName() {
     var femaleNamesString = "Aleta Alfhildr_Alfhild Alfrið_Alfridh Alvör Anna_Anna Asa_Åsa Aslaug Asta_Asta Astrid_Astrid Beata Birgitta_Brigid Björg Bodil\ Bothildr_Bothild Cecilia_Cecilia\
@@ -304,5 +303,9 @@ var names = femaleNamesString.split(" ");
     while (femaleName.startsWith(" ") || femaleName == "") {
         femaleName = names[Math.floor(Math.random() * names.length)];
     }
-    document.getElementById("femaleNameDisplay").innerHTML = femaleName;
+    document.getElementById("femaleNameDisplay").value = femaleName;
+}
+function clearNames(){
+    document.getElementById("maleNameDisplay").innerHTML = "";
+    document.getElementById("femaleNameDisplay").innerHTML = "";
 }

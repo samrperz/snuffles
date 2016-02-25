@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>DND_DM Random Generator</title>
-    <link rel="stylesheet" href="random.css">
-    <script src="random_num.js"></script>
+    
+    <link rel="stylesheet" href="CSS/random.css">
+    
+    <script src="Javascript/random_num.js"></script>
+    <script src="Javascript/random_names.js"></script>
 </head>
 <body>
     <div class="heading">
@@ -30,7 +33,7 @@
                 </tr>
                 <tr>
                     <td><button class="die" id="d6" onclick="rollCounter(6)">D6</button></td>
-                    <td><input id="numrolled" type="text" value="Number of Dice"></td>
+                    <td><input id="numrolled" type="number" placeholder="# of Dice"></td>
                     <td><button class="die" id="d12" onclick="rollCounter(12)">D12</button></td>
                 </tr>
                 <tr>
@@ -44,6 +47,24 @@
                     <td><button id="clearnum"  onclick="rollClear()">Clear</button></td>                 
                 </tr>
             </table>
+    </div>
+    <div class="names">
+        <table id="nametable">
+            <tr>
+                <th>Names</th>
+                <td><button onclick="clearNames()">Clear</button></td>
+            </tr>
+            <tr>
+                <th>Male</th>
+                <td><button onclick="getMaleName()">Click</button></td>
+                <td><input id="maleNameDisplay" type="text" value=""></td>
+            </tr>
+            <tr>
+                <th>Female</th>
+                <td><button onclick="getFemaleName()">Click</button></td>
+                <td><input id="femaleNameDisplay" type="text" value=""></td>
+            </tr>            
+        </table>
     </div>
 </body>
 </html>

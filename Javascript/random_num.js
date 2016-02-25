@@ -1,6 +1,7 @@
 var int;
 function rollClear() {
     document.getElementById("result").value = "";
+    document.getElementById("numrolled").value = "";
 }
 
 function rollCounter(diceValue,numberOfDice) {
@@ -12,7 +13,6 @@ function rollCounter(diceValue,numberOfDice) {
     document.getElementById("result").value = int;
     int = 0;
 }
-
 function rollMega(diceValue) {
     switch(diceValue) {
         case 4:
