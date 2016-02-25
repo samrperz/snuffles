@@ -2,10 +2,22 @@ body{
     margin-left: 100px;
     margin-right: 100px;
 }
-.heading{
+#heading{
     
 }
 h3{
     margin-top: -30px;
     margin-bottom: -30px;
+}
+#dicetable{
+    padding: 40px;
+}
+#dicetable tr td{
+    padding: 0px
+}
+#dicetable tr td input{
+    width: 100px;
+}
+#dicetable tr td button{
+    width: 50px;
 }

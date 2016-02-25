@@ -18,30 +18,31 @@
         <hr>
     </div>
     <div class="dice">
-            <table>
+            <table id="dicetable">
                 <tr>
                     <td></td>
                     <th>Dice Rolls</th>
                     <td></td>
                 </tr>
                 <tr>
-                    <td><button id="d4" onclick="roll4()">D4</button></td>
-                    <td><input type="text" name="result" value=""></td>
-                    <td><button id="d10" onclick="roll10()">D10</button></td>
+                    <td><button class="die" id="d4" onclick="rollCounter()(4,document.getElementById('numrolled').value)">D4</button></td>
+                    <td><input id="result" type="text" value=""></td>
+                    <td><button class="die" id="d10" onclick="roll10()">D10</button></td>
                 </tr>
                 <tr>
-                    <td><button id="d6" onclick="roll6()">D6</button></td>
-                    <td><input type="text" name="numroll" placeholder="Number of Dice" colspan="2"></td>
-                    <td><button id="d12" onclick="roll12()">D12</button></td>
+                    <td><button class="die" id="d6" onclick="roll6()">D6</button></td>
+                    <td><input id="numrolled" type="text" placeholder="Number of Dice"></td>
+                    <td><button class="die" id="d12" onclick="roll12()">D12</button></td>
                 </tr>
                 <tr>
-                     <td><button id="d8" onclick="roll8()">D8</button></td>
+                     <td><button class="die" id="d8" onclick="roll8()">D8</button></td>
                      <td></td>
-                     <td><button id="d20" onclick="roll20()">D20</button></td>
+                     <td><button class="die" id="d20" onclick="roll20()">D20</button></td>
                 </tr>
                 <tr>
-                    <td><button id="d100" onclick="roll100()">D100</button></td>
-                    <td><button id="clearnum" onclick="clear">Clear</button></td>                 
+                    <td><button class="die" id="d100" onclick="roll100()">D100</button></td>
+                    <td></td>
+                    <td><button id="clearnum"  onclick="rollClear()">Clear</button></td>                 
                 </tr>
             </table>
     </div>
