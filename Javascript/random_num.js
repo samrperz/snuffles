@@ -1,4 +1,5 @@
-var int;
+var int = 0;
+var modInt = 0;
 function rollClear() {
     document.getElementById("result").value = "";
     document.getElementById("numrolled").value = "";
@@ -6,11 +7,12 @@ function rollClear() {
 
 function rollCounter(diceValue,numberOfDice) {
     var i = document.getElementById("numrolled").value;
+    var modInt = parseInt(document.getElementById("modifier").value);
     do {
         rollMega(diceValue);
         i --;
     } while(i > 0);
-    document.getElementById("result").value = int;
+    document.getElementById("result").value = int + modInt;
     int = 0;
 }
 function rollMega(diceValue) {

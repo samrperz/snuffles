@@ -306,6 +306,6 @@ var names = femaleNamesString.split(" ");
     document.getElementById("femaleNameDisplay").value = femaleName;
 }
 function clearNames(){
-    document.getElementById("maleNameDisplay").innerHTML = "";
-    document.getElementById("femaleNameDisplay").innerHTML = "";
+    document.getElementById("maleNameDisplay").value = "";
+    document.getElementById("femaleNameDisplay").value = "";
 }
