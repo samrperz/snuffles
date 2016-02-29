@@ -10,9 +10,8 @@ function rollCounter(diceValue,numberOfDice) {
     if(document.getElementById("modifier").value == ""){
         document.getElementById("modifier").value = "0";
     }
+    
     var modInt = 0 + parseInt(document.getElementById("modifier").value);
-    
-    
     
     do {
         rollMega(diceValue);
@@ -20,9 +19,9 @@ function rollCounter(diceValue,numberOfDice) {
     } while(i > 0);
     document.getElementById("result").value = int + modInt;
     int = 0;
-    if(document.getElementById("modifier").value == "0"){
-        document.getElementById("modifier").value = "";
-    }
+    
+    document.getElementById("modifier").value = "";
+    
 }
 function rollMega(diceValue) {
     switch(diceValue) {

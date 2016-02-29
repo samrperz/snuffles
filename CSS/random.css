@@ -21,3 +21,6 @@ h3{
 #dicetable tr td button{
     width: 50px;
 }
+.thacoTable table tr{
+    border: solid;
+}
