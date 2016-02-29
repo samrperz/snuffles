@@ -9,8 +9,9 @@ h3{
     margin-top: -30px;
     margin-bottom: -30px;
 }
+
 #dicetable{
-    padding: 40px;
+    padding: 0px;
 }
 #dicetable tr td{
     padding: 0px
@@ -21,6 +22,12 @@ h3{
 #dicetable tr td button{
     width: 50px;
 }
-.thacoTable table tr{
+.thaco table{
     border: solid;
+}
+.thaco table th{
+    text-align: left
+}
+.thaco table td{
+    text-align: center
 }
