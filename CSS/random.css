@@ -8,10 +8,18 @@ body{
 h3{
     margin-top: -30px;
     margin-bottom: -30px;
+    color: goldenrod;
 }
 
+
+/* Dice */
+
+.dice{
+    float: left;
+    clear: right;
+}
 #dicetable{
-    padding: 0px;
+    padding: 10px;
 }
 #dicetable tr td{
     padding: 0px
@@ -22,12 +30,30 @@ h3{
 #dicetable tr td button{
     width: 50px;
 }
+.names{
+    clear: both;
+}
+
+/* thaco */
+
+.thaco{
+    float: left;
+}
 .thaco table{
-    border: solid;
+    line-height: 1;
+    border: 1px solid black;
+}
+.thaco table thead{
+    column-span: all;
+    text-align: center;
+}
+.thaco table tr{
+    border-collapse: collapse;
 }
 .thaco table th{
-    text-align: left
+    text-align: left;
 }
 .thaco table td{
-    text-align: center
+    text-align: center;
+    padding: 3px
 }
