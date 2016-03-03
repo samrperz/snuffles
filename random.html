@@ -48,29 +48,40 @@
                 </tr>
             </table>
     </div>
-    <div class="names">
-        <table id="nametable">
+    <div class="critfumb">
+        <table id="fumble/critical">
             <tr>
-                <th>Names</th>
-                <td><button onclick="clearNames()">Clear</button></td>
+                <td></td>
+                <th>Critical</th>
+                <th>Fumble</th>
             </tr>
             <tr>
-                <th>Male</th>
-                <td><button onclick="getMaleName()">Click</button></td>
-                <td><input id="maleNameDisplay" type="text" value=""></td>
+                <th>1-14</th>
+                <td id="x">x2</td>
+                <td>Drop Weapon</td>
             </tr>
             <tr>
-                <th>Female</th>
-                <td><button onclick="getFemaleName()">Click</button></td>
-                <td><input id="femaleNameDisplay" type="text" value=""></td>
-            </tr>            
+                <th>15-17</th>
+                <td id="x">x3</td>
+                <td>Damage Weapon</td>
+            </tr>
+            <tr>
+                <th>18-19</th>
+                <td id="x">x4</td>
+                <td>Hit Comrade</td>
+            </tr>
+            <tr>
+                <th>20</th>
+                <td id="x">x5</td>
+                <td>Crit. Comrade</td>
+            </tr>
         </table>
     </div>
     <br>
     <div class="thaco">
-        <table id="thacoTable" border="4" style="border-collapse: collapse;">
+        <table id="thacoTable" border="1" style="border-collapse: collapse;">
             <tr>
-                <thead>THAC0</thead>
+                <th>THAC0</th>
             </tr>
             <tr>
                 <th>Levels:</th>
@@ -137,6 +148,24 @@
                 <td>18</td>
                 <td>-</td>
             </tr>
+        </table>
+    </div>
+    <div class="names">
+        <table id="nametable">
+            <tr>
+                <th>Names</th>
+                <td><button onclick="clearNames()">Clear</button></td>
+            </tr>
+            <tr>
+                <th>Male</th>
+                <td><button onclick="getMaleName()">Click</button></td>
+                <td><input id="maleNameDisplay" type="text" value=""></td>
+            </tr>
+            <tr>
+                <th>Female</th>
+                <td><button onclick="getFemaleName()">Click</button></td>
+                <td><input id="femaleNameDisplay" type="text" value=""></td>
+            </tr>            
         </table>
     </div>
 </body>

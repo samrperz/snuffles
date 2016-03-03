@@ -16,7 +16,7 @@ h3{
 
 .dice{
     float: left;
-    clear: right;
+    
 }
 #dicetable{
     padding: 10px;
@@ -30,22 +30,30 @@ h3{
 #dicetable tr td button{
     width: 50px;
 }
+
 .names{
+    float: left;
     clear: both;
+}
+
+
+.critfumb{
+    padding: 10px;
+    float: left
+}
+.critfumb #x{
+    text-align: center
 }
 
 /* thaco */
 
 .thaco{
+    padding: 10px;
     float: left;
 }
 .thaco table{
     line-height: 1;
     border: 1px solid black;
-}
-.thaco table thead{
-    column-span: all;
-    text-align: center;
 }
 .thaco table tr{
     border-collapse: collapse;
