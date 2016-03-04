@@ -38,7 +38,7 @@ h3{
 
 
 .critfumb{
-    padding: 10px;
+    padding: 20px;
     float: left
 }
 .critfumb #x{
@@ -54,6 +54,9 @@ h3{
 .thaco table{
     line-height: 1;
     border: 1px solid black;
+}
+.thaco table h4{
+    text-align: center;
 }
 .thaco table tr{
     border-collapse: collapse;

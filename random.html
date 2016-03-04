@@ -8,6 +8,7 @@
     
     <script src="Javascript/random_num.js"></script>
     <script src="Javascript/random_names.js"></script>
+    <script src="Javascript/thaco_calc.js"></script>
 </head>
 <body>
     <div class="heading">
@@ -80,9 +81,9 @@
     <br>
     <div class="thaco">
         <table id="thacoTable" border="1" style="border-collapse: collapse;">
-            <tr>
-                <th>THAC0</th>
-            </tr>
+            <center>
+                <h4>THAC0</h4>
+            </center>
             <tr>
                 <th>Levels:</th>
                 <td>1</td>
@@ -150,6 +151,20 @@
             </tr>
         </table>
     </div>
+    <div class="tohit">
+        <table>
+            <tr>
+                <center><th colspan="all">To hit Calculation</th></center>
+                <td><button onclick="thacoCalc()">Submit</button></td>
+            </tr>
+            <tr>
+                <td><input id="thacoX" type="number" placeholder="thac0"></td>
+                <td><input id="armorY" type="number" placeholder="Armorclass"></td>
+                <td><input id="answer" type="number" placeholder="result"></td>
+            </tr>
+        </table>
+    </div>
+    
     <div class="names">
         <table id="nametable">
             <tr>
