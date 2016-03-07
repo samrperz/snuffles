@@ -12,8 +12,8 @@ h3{
 }
 
 
-/* Dice */
 
+/* Dice rolls */
 .dice{
     float: left;
     
@@ -31,12 +31,15 @@ h3{
     width: 50px;
 }
 
+
+/* Name Genorator */
 .names{
     float: left;
     clear: both;
 }
 
 
+/* criticle and fumble table */
 .critfumb{
     padding: 20px;
     float: left
@@ -45,8 +48,9 @@ h3{
     text-align: center
 }
 
-/* thaco */
 
+
+/* thaco table */
 .thaco{
     padding: 10px;
     float: left;
@@ -67,4 +71,10 @@ h3{
 .thaco table td{
     text-align: center;
     padding: 3px
+}
+
+
+/* to hit calculaction */
+.tohit input{
+    width: 80px;
 }
