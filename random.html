@@ -22,11 +22,9 @@
     </div>
     <div class="dice">
             <table id="dicetable">
-                <tr>
-                    <td></td>
-                    <th>Dice Rolls</th>
-                    <td></td>
-                </tr>
+                <thead id="center">
+                    <h2 id="center">Dice Rolls</h2>
+                </thead>
                 <tr>
                     <td><button class="die" id="d4" onclick="rollCounter(4)">D4</button></td>
                     <td><input id="result" type="text" value=""></td>
@@ -52,29 +50,34 @@
     <div class="critfumb">
         <table id="fumble/critical">
             <tr>
-                <td></td>
+                <th>Roll</th>
                 <th>Critical</th>
                 <th>Fumble</th>
+                <th>Magic Weapon</th>
             </tr>
             <tr>
                 <th>1-14</th>
-                <td id="x">x2</td>
+                <td id="center">x2</td>
+                <td>Drop Weapon</td>
                 <td>Drop Weapon</td>
             </tr>
             <tr>
                 <th>15-17</th>
-                <td id="x">x3</td>
+                <td id="center">x3</td>
                 <td>Damage Weapon</td>
-            </tr>
-            <tr>
-                <th>18-19</th>
-                <td id="x">x4</td>
                 <td>Hit Comrade</td>
             </tr>
             <tr>
+                <th>18-19</th>
+                <td id="center">x4</td>
+                <td>Hit Comrade</td>
+                <td>Magical Discharge</td>
+            </tr>
+            <tr>
                 <th>20</th>
-                <td id="x">x5</td>
+                <td id="center">x5</td>
                 <td>Crit. Comrade</td>
+                <td>Lose +, Magical Discharge</td>
             </tr>
         </table>
     </div>
@@ -181,6 +184,13 @@
                 <td><button onclick="getFemaleName()">Click</button></td>
                 <td><input id="femaleNameDisplay" type="text" value=""></td>
             </tr>            
+        </table>
+    </div>
+    <div id="partychars">
+        <table>
+            <tr>
+                th
+            </tr>
         </table>
     </div>
 </body>
