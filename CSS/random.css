@@ -61,12 +61,16 @@ hr{
 
 /* criticle and fumble table */
 .critfumb{
-    padding: 20px;
+    margin-top: -20px;
+    padding: 5px;
     float: left;
 }
 .critfumb table{
-    line-height: 0.9;
+    line-height: 1.2;
     border: 1px solid black;
+}
+.critfumb table tr{
+    border-collapse: collapse;
 }
 .critfumb table td{
     font-size: 15px;
