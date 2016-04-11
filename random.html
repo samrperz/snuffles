@@ -23,9 +23,7 @@
     
     <div class="dice">
             <table id="dicetable">
-                <thead id="center">
-                    <h2 id="center">Dice Rolls</h2>
-                </thead>
+                   <h4>Dice Rolls</h4>
                 <tr>
                     <td><button class="die" id="d4" onclick="rollCounter(4)">D4</button></td>
                     <td><input id="result" type="text" value=""></td>
@@ -48,7 +46,6 @@
                 </tr>
             </table>
     </div>
-    
     <div class="critfumb">
         <table id="fumble/critical">
             <center>
@@ -212,13 +209,23 @@
     
     <div class="tohit">
         <table>
+            <thead>To hit Calculation</thead>
             <tr>
-                <center><th colspan="all">To hit Calculation</th></center>
-                <td><button onclick="thacoCalc()">Submit</button></td>
+                
+                
             </tr>
             <tr>
+                <td></td>
                 <td><input id="thacoX" type="number" placeholder="thac0"></td>
+                
+                
+            </tr>
+            <tr>
+                <td>-</td>
                 <td><input id="armorY" type="number" placeholder="Armorclass"></td>
+            </tr>
+            <tr>
+                <td><button onclick="thacoCalc()">Submit</button></td>
                 <td><input id="answer" type="number" placeholder="result"></td>
             </tr>
         </table>
@@ -244,8 +251,9 @@
     </div>
     <div id="partychars">
         <table>
+            <h4>It's a Party</h4>
             <tr>
-                <th></th>
+                
             </tr>
         </table>
     </div>
