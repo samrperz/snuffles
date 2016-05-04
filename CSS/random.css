@@ -96,7 +96,7 @@ hr{
     border: solid 2px;
     margin: 10px;
     margin-top: 20px;
-    float: left;
+    float: right;
 }
 .thaco table{
     height: 180px;
@@ -116,10 +116,57 @@ hr{
 
 /* to hit calculaction */
 .tohit{
+    margin: 10px;
+    margin-left: 20px;
     clear: left;
-    float: right;
-    margin-right: 20px;
+    float: left;
+    border: solid 1px;
+    padding: 10px;
 }
 .tohit input{
     width: 80px;
 }
+
+/* Priest Turning Table */
+.turning{
+    float: left;
+    margin: 10px;
+    border: solid 2px;
+}
+.turning table{
+    
+}
+.turning table tr{
+    
+}
+.turning table td{
+    text-align: center;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
